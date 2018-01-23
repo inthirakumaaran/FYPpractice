@@ -8,7 +8,6 @@ int main(int argc, char** argv) {
   // Get the rank of the process
   int world_rank;
   MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
-
     long sum=0;
     long total=0;
     long totalCount=0;
@@ -61,8 +60,7 @@ int main(int argc, char** argv) {
     printf("Toatal count: %li\n",totalCount);
     printf("Average is %li\n",total/totalCount);
     
-}
-    
+}  
    fclose (fp);
     MPI_Finalize();
     
